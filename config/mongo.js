@@ -27,7 +27,7 @@ let mongoDB = async () => {
 		}
 	});
 };
-/*let cleanup = async (caller) => {
+let cleanup = async (caller) => {
 	console.log(caller);
 	mongoose.connection.close();
 };
@@ -39,7 +39,7 @@ process.on("SIGTERM", () => {
 });
 process.on("exit", () => {
 	cleanup("exit");
-});*/
+});
 module.exports = {
 	mongoDB,
 };
